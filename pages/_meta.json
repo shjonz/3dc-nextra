@@ -1,11 +1,37 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
   "about": {
     "title": "About",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "events": {
+    "title": "Events",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "workshops": {
+    "title": "Workshops",
     "type": "page"
   },
+  "members": {
+    "title": "Members",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+
   "contact": {
     "title": "Contact ↗",
     "type": "page",

@@ -1,18 +1,26 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from 'react';
+import { DocsThemeConfig } from 'nextra-theme-docs';
+import SutdLogo from '@components/SutdLogo';
+import Footer from '@components/Footer';
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: (
+    <>
+      <SutdLogo />
+    </>
+  ),
   project: {
     link: 'https://github.com/shuding/nextra-docs-template',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    // component: <Footer />,
   },
-}
+  // remove search bar
+  search: { component: <></> },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
+};
 
-export default config
+export default config;
