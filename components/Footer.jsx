@@ -1,13 +1,58 @@
 import { Typography } from '@material-tailwind/react';
-import ClubLogo from './ClubLogo';
+import {
+  FaTelegramPlane,
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+} from 'react-icons/fa';
 
-export default function Footer() {
+const currentYear = new Date().getFullYear();
+
+export default function Example() {
   return (
-    <footer className="w-full bg-white p-8">
-      <hr className="my-8 border-blue-gray-50" />
-      <Typography color="blue-gray" className="text-center font-normal">
-        &copy; 2023 SUTD 3DC
-      </Typography>
+    <footer className="relative w-full">
+      <div className="mx-auto w-full max-w-7xl px-8">
+        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+          <Typography
+            variant="small"
+            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+          >
+            &copy; {currentYear}{' '}
+            <a href="https://material-tailwind.com/">SUTD 3DC</a>. All Rights
+            Reserved.
+          </Typography>
+          <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+            <Typography
+              as="a"
+              href="#"
+              className="opacity-80 transition-opacity hover:opacity-100"
+            >
+              <FaTelegramPlane />
+            </Typography>
+            <Typography
+              as="a"
+              href="#"
+              className="opacity-80 transition-opacity hover:opacity-100"
+            >
+              <FaLinkedin />
+            </Typography>
+            <Typography
+              as="a"
+              href="#"
+              className="opacity-80 transition-opacity hover:opacity-100"
+            >
+              <FaInstagram />
+            </Typography>
+            <Typography
+              as="a"
+              href="#"
+              className="opacity-80 transition-opacity hover:opacity-100"
+            >
+              <FaGithub />
+            </Typography>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

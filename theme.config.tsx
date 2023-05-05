@@ -9,12 +9,9 @@ const config: DocsThemeConfig = {
       <SutdLogo />
     </>
   ),
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    // component: <Footer />,
+    component: <Footer />,
   },
   // remove search bar
   search: { component: <></> },

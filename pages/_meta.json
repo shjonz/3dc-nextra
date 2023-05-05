@@ -8,7 +8,10 @@
   },
   "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
   },
   "events": {
     "title": "Events",
@@ -18,18 +21,11 @@
     "title": "Workshops",
     "type": "page"
   },
-  "members": {
-    "title": "Members",
+  "projects": {
+    "title": "Projects",
     "type": "page",
     "theme": {
       "layout": "raw"
     }
-  },
-
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
   }
 }
