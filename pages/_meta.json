@@ -8,17 +8,11 @@
   },
   "about": {
     "title": "About",
-    "type": "page",
-    "theme": {
-      "layout": "raw"
-    }
+    "type": "page"
   },
   "events": {
     "title": "Events",
-    "type": "page",
-    "theme": {
-      "layout": "raw"
-    }
+    "type": "page"
   },
   "workshops": {
     "title": "Workshops",
