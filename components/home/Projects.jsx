@@ -12,13 +12,13 @@ export default function Projects() {
         <div className="space-y-4">
           <h2 className="text-3xl font-bold">Projects</h2>
           <p className="text-lg text-gray-600">
-            Have a project idea but don't know where to start? Join 3DC to find
-            your next project partner or get help from our seniors!
+            Looking to start a new project but not sure where to begin? Join 3DC
+            to find your next project partner or get help from our seniors.
+            Whether you have a project idea that you need help with or just want
+            to code and be a part of our projects, 3DC has a place for you.
             <br />
-            Have the skills but not great at ideas? Just wanna code? Join 3DC
-            and be a part of our projects!
             <br />
-            Check out our past projects and see what we have been up to!
+            Check out our past projects to see what we have been up to!
           </p>
           <div className="flex">
             <a href="/projects" className="">
