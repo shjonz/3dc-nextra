@@ -5,7 +5,7 @@ import Feature from "../Feature";
 import Hero from "./Hero";
 import About from "./About";
 import Newsletter from "./Newsletter";
-import Team from "./Team";
+import Disclaimer from "./Disclaimer";
 import Workshops from "./Workshops";
 import Events from "./Events";
 import Projects from "./Projects";
@@ -25,11 +25,11 @@ function Home() {
       <div>
         <Hero />
         <About />
-        {/*<Team >*/}
         <Workshops />
         <Events />
         <Projects />
         <Newsletter />
+        <Disclaimer />
       </div>
     </>
   );

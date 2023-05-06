@@ -4,12 +4,8 @@ export default function Team() {
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Our Team
+            Meet our passionate EXCO team!
           </h2>
-          <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            Explore the whole collection of open-source web components and
-            elements built with the utility classes from Tailwind
-          </p>
         </div>
         <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
@@ -27,9 +23,6 @@ export default function Team() {
               <span class="text-gray-500 dark:text-gray-400">President</span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate reiciendis sint, sapiente voluptatem pariatur quas
-                perspiciatis nisi quisquam minima sunt, sit molestiae nesciunt
-                incidunt, tempore inventore nam. Est, at harum?
               </p>
               <ul class="flex space-x-4 sm:mt-0">
                 <li>
@@ -124,9 +117,6 @@ export default function Team() {
               </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda autem officiis dolore, asperiores nisi accusantium,
-                tempore accusamus, possimus cum mollitia tenetur temporibus
-                incidunt error quidem soluta rem voluptate consectetur neque?
               </p>
               <ul class="flex space-x-4 sm:mt-0">
                 <li>
@@ -220,10 +210,7 @@ export default function Team() {
                 Vice President (Projects)
               </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                quibusdam obcaecati nesciunt eius veritatis, itaque at quasi.
-                Consequuntur vel cupiditate incidunt, officiis maxime facere
-                quisquam quis dignissimos quasi dolor iste!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <ul class="flex space-x-4 sm:mt-0">
                 <li>
@@ -316,9 +303,6 @@ export default function Team() {
               <span class="text-gray-500 dark:text-gray-400">Treasurer</span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid corporis culpa voluptatibus officia labore doloribus. Et
-                possimus ratione a ipsum est eius vel, deleniti labore fugiat
-                voluptatum! Libero, consectetur modi?
               </p>
               <ul class="flex space-x-4 sm:mt-0">
                 <li>
@@ -410,10 +394,7 @@ export default function Team() {
               </h3>
               <span class="text-gray-500 dark:text-gray-400">Secretary</span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                excepturi consectetur architecto velit et, tenetur repellat id
-                natus beatae, laboriosam praesentium hic eligendi sapiente
-                ratione odit doloremque necessitatibus qui aliquid?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <ul class="flex space-x-4 sm:mt-0">
                 <li>
@@ -507,10 +488,7 @@ export default function Team() {
                 Markerting and Publicity Director
               </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                recusandae nihil ea odio suscipit eius tenetur dolor rem
-                delectus qui sint dolores repellat quo ducimus consequuntur vel
-                totam, dignissimos molestiae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <ul class="flex space-x-4 sm:mt-0">
                 <li>
