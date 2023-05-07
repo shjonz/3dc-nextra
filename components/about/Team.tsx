@@ -1,37 +1,37 @@
 export default function Team() {
   return (
-    <section class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+        <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Meet our passionate EXCO team!
           </h2>
         </div>
-        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+          <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                 alt="Bonnie Avatar"
               />
             </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href="#">Joshua Pacheco</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">President</span>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+              <span className="text-gray-500 dark:text-gray-400">President</span>
+              <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
-              <ul class="flex space-x-4 sm:mt-0">
+              <ul className="flex space-x-4 sm:mt-0">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -47,10 +47,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -62,10 +62,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -81,10 +81,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -100,32 +100,32 @@ export default function Team() {
               </ul>
             </div>
           </div>
-          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+          <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                 alt="Jese Avatar"
               />
             </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href="#">Ng Wei Hao</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">
+              <span className="text-gray-500 dark:text-gray-400">
                 Vice President (Tech)
               </span>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+              <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <ul class="flex space-x-4 sm:mt-0">
+              <ul className="flex space-x-4 sm:mt-0">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -141,10 +141,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -156,10 +156,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -175,10 +175,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -194,32 +194,32 @@ export default function Team() {
               </ul>
             </div>
           </div>
-          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+          <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                 alt="Michael Avatar"
               />
             </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href="#">Asyraff</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">
+              <span className="text-gray-500 dark:text-gray-400">
                 Vice President (Projects)
               </span>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+              <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <ul class="flex space-x-4 sm:mt-0">
+              <ul className="flex space-x-4 sm:mt-0">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -235,10 +235,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -250,10 +250,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -269,10 +269,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -288,30 +288,30 @@ export default function Team() {
               </ul>
             </div>
           </div>
-          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+          <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
                 alt="Sofia Avatar"
               />
             </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href="#">Tan Hun Chong</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">Treasurer</span>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+              <span className="text-gray-500 dark:text-gray-400">Treasurer</span>
+              <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
-              <ul class="flex space-x-4 sm:mt-0">
+              <ul className="flex space-x-4 sm:mt-0">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -327,10 +327,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -342,10 +342,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -361,10 +361,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -380,30 +380,30 @@ export default function Team() {
               </ul>
             </div>
           </div>
-          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+          <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
                 alt="Sofia Avatar"
               />
             </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href="#">Pankti</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">Secretary</span>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+              <span className="text-gray-500 dark:text-gray-400">Secretary</span>
+              <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <ul class="flex space-x-4 sm:mt-0">
+              <ul className="flex space-x-4 sm:mt-0">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -419,10 +419,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -434,10 +434,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -453,10 +453,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -472,32 +472,32 @@ export default function Team() {
               </ul>
             </div>
           </div>
-          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+          <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
                 alt="Sofia Avatar"
               />
             </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="p-5">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href="#">Fushia</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">
+              <span className="text-gray-500 dark:text-gray-400">
                 Markerting and Publicity Director
               </span>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+              <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <ul class="flex space-x-4 sm:mt-0">
+              <ul className="flex space-x-4 sm:mt-0">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -513,10 +513,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -528,10 +528,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -547,10 +547,10 @@ export default function Team() {
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
                     <svg
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
