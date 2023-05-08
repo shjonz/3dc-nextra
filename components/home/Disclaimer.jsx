@@ -1,25 +1,10 @@
 export default function Disclaimer() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: "0.7rem",
-        padding: "0rem",
-        maxWidth: "100%",
-        wordWrap: "break-word",
-      }}
-    >
+    <div className="flex items-center justify-center text-xs p-0 w-full break-words">
       <img
         src="imgs\logos\GDSC.webp"
         alt="Image description"
-        style={{
-          marginRight: "0.5rem",
-          maxHeight: "2em",
-          maxWidth: "100%",
-          height: "auto",
-        }}
+        className="mr-2 max-h-8 max-w-full h-auto"
       />
       <span>
         Disclaimer: DSC is an independent group; the activities and opinions
@@ -29,3 +14,4 @@ export default function Disclaimer() {
     </div>
   );
 }
+
