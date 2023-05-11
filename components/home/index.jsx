@@ -1,13 +1,14 @@
-import { Button } from '@material-tailwind/react';
-import ClubLogo from '../ClubLogo';
-import CategoryCards from '../CategoryCards';
-import Feature from '../Feature';
-import Hero from './Hero';
-import About from './About';
-import Newsletter from './Newsletter';
-import Workshops from './Workshops';
-import Events from './Events';
-import Projects from './Projects';
+import { Button } from "@material-tailwind/react";
+import ClubLogo from "../ClubLogo";
+import CategoryCards from "../CategoryCards";
+import Feature from "../Feature";
+import Hero from "./Hero";
+import About from "./About";
+import Newsletter from "./Newsletter";
+import Disclaimer from "./Disclaimer";
+import Workshops from "./Workshops";
+import Events from "./Events";
+import Projects from "./Projects";
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
         <Events />
         <Projects />
         <Newsletter />
+        <Disclaimer />
       </div>
     </>
   );

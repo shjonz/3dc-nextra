@@ -11,12 +11,16 @@ const config: DocsThemeConfig = {
   ),
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    component: <Footer />,
+    // component: <Footer />,
   },
   // remove search bar
   search: { component: <></> },
   sidebar: {
     defaultMenuCollapseLevel: 1,
+  },
+  nextThemes: {
+    defaultTheme: 'light',
+    forcedTheme: 'light',
   },
 };
 
