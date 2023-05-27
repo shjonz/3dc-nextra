@@ -1,6 +1,7 @@
 import AboutHeader from './Header';
 import Team from './Team';
 import Disclaimer from '../home/Disclaimer';
+import React from 'react';
 
 export default function About() {
   return (
