@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "../.next"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../pages"
+		},
+		{
+			"path": "../public"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": ".github"
+	}
+}
