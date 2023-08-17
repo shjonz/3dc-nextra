@@ -1,6 +1,6 @@
 export default function Events() {
   return (
-    <div className="max-w-5xl py-12 px-4 mx-auto">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="space-y-4">
           <h2 className="font-bold">Events</h2>

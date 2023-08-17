@@ -1,9 +1,8 @@
 import React from "react";
 
 const links = [
-  { name: 'Our Team', href: '#' },
-  { name: 'Join Us', href: '#' },
-  { name: 'Contact Us', href: '#' },
+  { name: 'Work with us', href: '#' },
+  { name: 'Work with us', href: '#' },
 ];
 const stats = [
   { name: 'Offices worldwide', value: '12' },
