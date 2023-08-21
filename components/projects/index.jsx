@@ -1,5 +1,7 @@
-import ProjectHeader from './Header';
-import Showcase from './Showcase';
+import Disclaimer from "../home/Disclaimer";
+import Newsletter from "../home/Newsletter";
+import ProjectHeader from "./Header";
+import Showcase from "./Showcase";
 
 export default function Projects() {
   return (
@@ -7,6 +9,8 @@ export default function Projects() {
       <div>
         <ProjectHeader />
         <Showcase />
+        <Newsletter />
+        <Disclaimer />
       </div>
     </>
   );

@@ -1,3 +1,5 @@
+import React from "react";
+
 const links = [
   { name: 'Our Team', href: '#' },
   { name: 'Join Us', href: '#' },

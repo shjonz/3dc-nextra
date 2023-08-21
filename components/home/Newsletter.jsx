@@ -1,5 +1,5 @@
-import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
-
+import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+/* import { SiTwitter } from "@react-icons/si"; */
 export default function Newsletter() {
   return (
     <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
@@ -36,30 +36,71 @@ export default function Newsletter() {
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
             <div className="flex flex-col items-start">
-              <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
-                <CalendarDaysIcon
-                  className="h-6 w-6 text-gray"
-                  aria-hidden="true"
-                />
-              </div>
-              <dt className="mt-4 font-semibold text-gray">Monthly articles</dt>
-              <dd className="mt-2 leading-7 text-gray-700">
+              <dt className="mt-4 font-semibold text-gray">Follow us</dt>
+              {/*<dd className="mt-2 leading-7 text-gray-700">
                 We cover the latest technologies with each issue being a guide
                 for a particular stream in tech.
-              </dd>
+                </dd> */}
+              <div className="flex gap-x-2 mt-2">
+                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                  <CalendarDaysIcon
+                    className="h-6 w-6 text-gray"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                  <CalendarDaysIcon
+                    className="h-6 w-6 text-gray"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                  <CalendarDaysIcon
+                    className="h-6 w-6 text-gray"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-start">
+              <dt className="mt-4 font-semibold text-gray">Contact us</dt>
+              {/*<dd className="mt-2 leading-7 text-gray-700">
+                We cover the latest technologies with each issue being a guide
+                for a particular stream in tech.
+                </dd> */}
+              <div className="flex gap-x-2 mt-2">
+                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                  <HandRaisedIcon
+                    className="h-6 w-6 text-gray"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                  <HandRaisedIcon
+                    className="h-6 w-6 text-gray"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                  <HandRaisedIcon
+                    className="h-6 w-6 text-gray"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* <div className="flex flex-col items-start">
               <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
                 <HandRaisedIcon
                   className="h-6 w-6 text-gray"
                   aria-hidden="true"
                 />
               </div>
-              <dt className="mt-4 font-semibold text-gray">No spam</dt>
-              <dd className="mt-2 leading-7 text-gray-700">
-                Unsubscribe at any time. Good things only. We promise.
-              </dd>
-            </div>
+              <dt className="mt-4 font-semibold text-gray">Contact us</dt>
+              </div> */}
+            {/* <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+              <SiTwitter className="h-6 w-6 text-gray" aria-hidden="true" />
+            </div> */}
           </dl>
         </div>
       </div>

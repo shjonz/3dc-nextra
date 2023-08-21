@@ -6,9 +6,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Newsletter from "./Newsletter";
 import Disclaimer from "./Disclaimer";
-import Workshops from "./Workshops";
 import Events from "./Events";
-import Projects from "./Projects";
 
 function Home() {
   return (
@@ -25,9 +23,7 @@ function Home() {
       <div>
         <Hero />
         <About />
-        <Workshops />
         <Events />
-        <Projects />
         <Newsletter />
         <Disclaimer />
       </div>
