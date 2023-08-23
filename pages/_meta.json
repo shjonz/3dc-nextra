@@ -13,14 +13,6 @@
       "layout": "raw"
     }
   },
-  "events": {
-    "title": "Events",
-    "type": "page"
-  },
-  "workshops": {
-    "title": "Workshops",
-    "type": "page"
-  },
   "projects": {
     "title": "Projects",
     "type": "page",

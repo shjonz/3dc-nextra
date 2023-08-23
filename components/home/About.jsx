@@ -6,6 +6,9 @@ import {
   CalendarDaysIcon,
   CommandLineIcon,
 } from "@heroicons/react/20/solid";
+import EventCard from './EventCard';
+import { Reveal } from "./Reveal";
+import {LeftSide} from "./OnScroll"
 
 const features = [
   {
@@ -28,9 +31,23 @@ const features = [
   },
 ];
 
+const exco = [
+  {
+    title: 'President',
+    date: 'Asyraff',
+    description: 'Join us for a day of live music and fun!',
+  },
+  {
+    title: 'Vice President',
+    date: 'Ryan',
+    description: 'Explore beautiful artworks from local artists.',
+  },
+  // Add more event objects as needed
+];
+
 export default function About() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32" id="about">
+    <div className="overflow-hidden snap-start flex-shrink-0 bg-white py-20 sm:py-32" id="about">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
@@ -38,22 +55,31 @@ export default function About() {
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
                 Hello
               </h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+
+              <LeftSide>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-fade ">
                 Welcome to 3DC
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              </LeftSide>
+              
+              
+
+              <Reveal>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
                 Digital Design & Development Club (3DC) is an official Fifth-Row
                 club affiliated with ISTD Pillar at SUTD. We are also a{" "}
-                <a
+                  <a
                   href="https://gdsc.community.dev/chapters/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 underline"
-                >
+                  >
                   Developer Student Club (DSC)
-                </a>{" "}
+                  </a>{" "}
                 supported by Google.
-              </p>
+                </p>
+              </Reveal>
+              
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
@@ -71,12 +97,24 @@ export default function About() {
             </div>
           </div>
           <Container>
-            <div class="ratio ratio-16x9">
-              <iframe
+            
+              {/* <iframe
                 src="https://www.youtube.com/embed/DcN_hcHXR_0"
                 title="YouTube video"
                 allowfullscreen
-              ></iframe>
+              ></iframe> "ratio ratio-16x9 " */}
+            
+
+            <div className="exco-profilecard">
+              {exco.map((event, index) => (
+                <EventCard
+                  key={index}
+                  title={event.title}
+                  date={event.date}
+                  description={event.description}
+                />
+              
+              ))}
             </div>
           </Container>
         </div>

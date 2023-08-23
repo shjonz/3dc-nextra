@@ -94,6 +94,18 @@ function ShowcaseCard(props) {
   );
 }
 
+//const getData = async (id: string) => {
+//   const res = await fetch(`http://localhost:3000/api/projects/`, {
+//     cache: "no-store",
+//   });
+
+//   if (!res.ok) {
+//     throw new Error("Failed!");
+//   }
+
+//   return res.json();
+// };
+
 
 export default function Showcase() {
   return (
