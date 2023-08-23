@@ -1,0 +1,116 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Event_Member {
+  id        String  @id
+  member_id String
+  event_id  String
+  role      String
+  Events    Events  @relation(fields: [event_id], references: [id])
+  Members   Members @relation(fields: [member_id], references: [id])
+}
+
+model Events {
+  id            String         @id
+  title         String
+  event_cat     String
+  description   String
+  image_link    String
+  start_date    DateTime
+  end_date      DateTime?
+  collab_id     String
+  Event_Member  Event_Member[]
+  Organisations Organisations  @relation(fields: [collab_id], references: [id])
+  Events_Cat    Events_Cat     @relation(fields: [event_cat], references: [title])
+}
+
+model Events_Cat {
+  id          String   @id
+  title       String   @unique
+  description String
+  image_link  String
+  color       String
+  Events      Events[]
+}
+
+model Members {
+  id             String           @id
+  name           String
+  email          String
+  end_date       DateTime?
+  github_link    String?
+  image_link     String
+  linkedin_link  String?
+  member_role    String
+  start_date     DateTime
+  Event_Member   Event_Member[]
+  Members_Role   Members_Role     @relation(fields: [member_role], references: [title])
+  Posts          Posts[]
+  Project_Member Project_Member[]
+}
+
+model Members_Role {
+  id         String    @id
+  title      String    @unique
+  image_link String
+  color      String
+  Members    Members[]
+}
+
+model Organisations {
+  id          String     @id
+  name        String
+  POC_name    String?
+  POC_contact Int?
+  POC_email   String?    @unique
+  Events      Events[]
+  Projects    Projects[]
+}
+
+model Posts {
+  id           String   @id
+  author_id    String
+  image_link   String
+  title        String
+  date_created DateTime
+  caption      String?
+  Members      Members  @relation(fields: [author_id], references: [id])
+}
+
+model Project_Member {
+  id        String   @id
+  member_id String
+  proj_id   String
+  role      String
+  Members   Members  @relation(fields: [member_id], references: [id])
+  Projects  Projects @relation(fields: [proj_id], references: [id])
+}
+
+model Projects {
+  id             String           @id
+  title          String
+  project_cat    String
+  description    String
+  image_link     String
+  start_date     DateTime
+  end_date       DateTime?
+  collab_id      String
+  Project_Member Project_Member[]
+  Organisations  Organisations    @relation(fields: [collab_id], references: [id])
+  Projects_Cat   Projects_Cat     @relation(fields: [project_cat], references: [title])
+}
+
+model Projects_Cat {
+  id          String     @id
+  title       String     @unique
+  description String
+  image_link  String
+  color       String
+  Projects    Projects[]
+}
