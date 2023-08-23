@@ -8,7 +8,12 @@ export default function Projects() {
     <>
       <div>
         <ProjectHeader />
+        <h1 className="px-4 pt-10 font-bold text-3xl">Upcoming</h1>
         <Showcase />
+
+        <h1 className="px-4 pt-10 font-bold text-3xl">Past</h1>
+        <Showcase />
+
         <Newsletter />
         <Disclaimer />
       </div>
