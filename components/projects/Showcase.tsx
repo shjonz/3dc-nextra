@@ -94,11 +94,11 @@ function ShowcaseCard(props) {
   );
 }
 
-//const getData = async (id: string) => {
-//   const res = await fetch(`http://localhost:3000/api/projects/`, {
+// const getData = async () => {
+//   const res = await fetch(`http://localhost:3000/api/projects/get`, {
 //     cache: "no-store",
 //   });
-
+//   console.log('can')
 //   if (!res.ok) {
 //     throw new Error("Failed!");
 //   }
@@ -108,6 +108,8 @@ function ShowcaseCard(props) {
 
 
 export default function Showcase() {
+  // const singleProduct = await getData();
+  // console.log('singleproduct', JSON.stringify(singleProduct))
   return (
       // <div className="px-4 py-4 grid sm:grid-cols-1 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
       <div className="px-4 py-4 flex gap-4 overflow-auto">
