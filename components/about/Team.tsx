@@ -1,4 +1,55 @@
 import React from "react";
+import { useState, useEffect } from 'react';
+import { Reveal } from "../home/Reveal";
+
+// const members = [
+//   {
+//     name: 'martha stuward',
+//     role: 'coffee getter',
+//     description: 'does some work and drinks coffee',
+//     github: 'www.google.com',
+//     linkedin: 'www.google.com',
+//     email: '',
+//     telegram:'www.google.com',
+//     href: ''
+//   },
+
+//   {
+//     name: 'john doe',
+//     role: 'watcher',
+//     description: 'i llike pie',
+//     github: 'www.google.com',
+//     linkedin: 'www.google.com',
+//     email: 'john@gmail.com',
+//     telegram:'www.google.com',
+//     href: ''
+//   },
+//   {
+//     name: 'jane doe',
+//     role: 'doer',
+//     description: 'fafwafwaf afwawfaf awffw f fw afwfawfwa awffwafwaff awfwfwaf',
+//     github: 'Thinktank 13 2.307',
+//     linkedin: 'Project',
+//     email: 'doe@gmail.com',
+//     telegram:'www.google.com',
+//     href: ''
+//   },
+
+//   {
+//     name: 'prince harry',
+//     role: 'the prince',
+//     description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English.',
+//     github: 'Thinktank 13 2.307',
+//     linkedin: 'Workshop',
+//     email: 'harry@gmail.com',
+//     telegram:'www.google.com',
+//     href: ''
+//   },
+// ];
+
+
+
+
 
 const GitHubButton = ({ profileUrl }) => {
     return (
@@ -69,9 +120,50 @@ const TelegramButton = ({ profileUrl }) => {
       </a>
     );
   };
+
+// const ExcoCard = ({name, role, description, github, linkedin, email, telegram, href}) => {
+//   return (
+//     <a href={href}>
+//       <div className="mb-24 md:mb-0 py-20">
+//           <div
+//               className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+//               <div className="flex justify-center">
+//                   <div className="flex justify-center -mt-[75px]">
+//                       <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
+//                       className="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]" alt="Avatar" />
+//                   </div>
+//               </div>
+
+//               <div className="p-6">
+//                   <h5 className="mb-1 text-lg font-bold">{name}</h5>
+//                   <p className="mb-6">{role}</p>
+//                   <p className="mb-6">{description}</p>
+//                   <ul className="mx-auto flex list-inside justify-center">
+
+//                   <GitHubButton profileUrl={github}/>
+//                   <LinkedinButton profileUrl={linkedin}/>
+//                   <EmailButton emailAddress={email}/>
+//                   <TelegramButton profileUrl={telegram}/>
+
+//                   </ul>
+//               </div>
+//           </div>
+//       </div>
+//     </a>
+
+
+//   );
+// }
   
 
 export default function Team() {
+  function ExcoMemberCard() {
+    const [isLoaded, setIsLoaded] = useState(false);
+  
+    useEffect(() => {
+      setIsLoaded(true);
+    }, []);
+  }
   return (
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
             <div className="text-left pb-12">
@@ -81,10 +173,20 @@ export default function Team() {
             </div>
 
             <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+
+                {/* meant to make the cards dynamic but has hydration issues currently */}
+                {/* <div className="px-4 py-4 flex gap-4 overflow-auto">
+                  {members.map((project) => (
+                    <ExcoCard {...project} />
+                  ))}
+                </div> */}
+
+
                 {/* card */}
+                
                 <div className="mb-24 md:mb-0 py-20">
                     <div
-                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="flex justify-center">
                             <div className="flex justify-center -mt-[75px]">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
@@ -93,9 +195,11 @@ export default function Team() {
                         </div>
 
                         <div className="p-6">
+                          {/* <Reveal> */}
                             <h5 className="mb-1 text-lg font-bold">Marta Smith</h5>
                             <p className="mb-6">Frontend Developer</p>
                             <p className="mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                            {/* </Reveal> */}
                             <ul className="mx-auto flex list-inside justify-center">
 
                             <GitHubButton profileUrl={'www.google.com'}/>
@@ -103,14 +207,15 @@ export default function Team() {
                             <EmailButton emailAddress={'hello@gmail.com'}/>
                             <TelegramButton profileUrl={'www.google.com'}/>
 
-                            </ul>
+                            </ul>                           
                         </div>
                     </div>
                 </div>
+                
 
                 <div className="mb-24 md:mb-0 py-20">
                     <div
-                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="flex justify-center">
                             <div className="flex justify-center -mt-[75px]">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
@@ -135,7 +240,7 @@ export default function Team() {
 
                 <div className="mb-24 md:mb-0 py-20">
                     <div
-                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="flex justify-center">
                             <div className="flex justify-center -mt-[75px]">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
@@ -160,7 +265,7 @@ export default function Team() {
 
                 <div className="mb-24 md:mb-0 py-20">
                     <div
-                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="flex justify-center">
                             <div className="flex justify-center -mt-[75px]">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
@@ -184,71 +289,6 @@ export default function Team() {
                 </div>
 
             </div>
-
-
-            {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-                    <div className="mb-8">
-                        <img className="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
-                        </img>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
-                        <p className="text-base text-gray-400 font-normal">Software Engineer</p>
-                    </div>
-                </div>
-                <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-                    <div className="mb-8">
-                        <img className="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
-                        </img>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-                        <p className="text-base text-gray-400 font-normal">Graphic Designer</p>
-                    </div>
-                </div>
-                <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-                    <div className="mb-8">
-                        <img className="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
-                        </img>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-                        <p className="text-base text-gray-400 font-normal">Dev Ops</p>
-                    </div>
-                </div>
-                <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-                    <div className="mb-8">
-                        <img className="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
-                        </img>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
-                        <p className="text-base text-gray-400 font-normal">Software Engineer</p>
-                    </div>
-                </div>
-                <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-                    <div className="mb-8">
-                        <img className="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo">
-                        </img>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-                        <p className="text-base text-gray-400 font-normal">Graphic Designer</p>
-                    </div>
-                </div>
-                <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-                    <div className="mb-8">
-                        <img className="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo">
-                        </img>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-                        <p className="text-base text-gray-400 font-normal">Dev Ops</p>
-                    </div>
-                </div>
-            </div> */}
-
         </section>
   );
 }
