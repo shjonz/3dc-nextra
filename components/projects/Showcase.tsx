@@ -94,26 +94,35 @@ function ShowcaseCard(props) {
   );
 }
 
-// const getData = async () => {
-//   const res = await fetch(`http://localhost:3000/api/projects/get`, {
-//     cache: "no-store",
-//   });
-//   console.log('can')
-//   if (!res.ok) {
-//     throw new Error("Failed!");
-//   }
-
-//   return res.json();
-// };
-
-
 export default function Showcase() {
-  // const singleProduct = await getData();
-  // console.log('singleproduct', JSON.stringify(singleProduct))
+  const [ data, setData ] = useState([]);
+  useEffect( () =>{
+    const data = getData();
+    console.log('get data here ', JSON.stringify(data[0]));
+  }, [])
+
+
+  //RYAN this is how to call backend from front end
+  const getData = async () => {
+    //to test ur data, type this link http://localhost:3000/api/projects/get inside ur browser. you will either get
+    //empty array or some data.
+    
+    const res = await fetch(`http://localhost:3000/api/projects/get`, {
+      cache: "no-store",
+    }).then(
+      response => response.json()
+    ).then(data => {
+      console.log('data ', data);
+      setData(data);
+    });
+  
+  };
+
+  //RYAN data.map() is how u make ur data displayed.
   return (
       // <div className="px-4 py-4 grid sm:grid-cols-1 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
       <div className="px-4 py-4 flex gap-4 overflow-auto">
-        {projects.map((project) => (
+        {data.map((project) => (
           <ShowcaseCard {...project} />
         ))}
       </div>
