@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/20/solid";
 import EventCard from './EventCard';
 import { Reveal } from "./Reveal";
-import {LeftSide} from "./OnScroll"
+import {LeftSide, RightSide} from "./OnScroll"
 import {ExcoCard } from "../about/Team";
 
 const features = [
@@ -121,16 +121,13 @@ export default function About() {
             </div>
           </div>
 
-
+          <RightSide >
           <div className="  w-auto py-10  ">
-            
               {/* <iframe
                 src="https://www.youtube.com/embed/DcN_hcHXR_0"
                 title="YouTube video"
                 allowfullscreen
               ></iframe> "ratio ratio-16x9 " */}
-            
-
             <div className="exco-profilecard bg-orange-500 px-4 py-4 flex gap-4 overflow-auto">
               {exco.map((event, index) => (
                 <ExcoCard key={index}
@@ -144,6 +141,7 @@ export default function About() {
               ) )}
             </div>
           </div>
+          </RightSide>
         </div>
       </div>
     </div>

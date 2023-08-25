@@ -175,18 +175,18 @@ export default function Team() {
             <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
 
                 {/* meant to make the cards dynamic but has hydration issues currently */}
-                <div className="px-4 py-4 flex gap-4 overflow-auto">
+                {/* <div className="px-4 py-4 flex gap-4 overflow-auto">
                   {members.map((project, key) => (
                     <ExcoCard {...project}  />
                   ))}
-                </div>
+                </div> */}
 
 
                 {/* card */}
 
                 
                 
-                {/* <div className="mb-24 md:mb-0 py-20">
+                <div className="mb-24 md:mb-0 py-20">
                     <div
                         className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="flex justify-center">
@@ -291,7 +291,7 @@ export default function Team() {
                             </ul>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
               </div>
         </section>

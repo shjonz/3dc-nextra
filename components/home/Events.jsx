@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import EventCard from './EventCard';
-import { LeftSide } from './OnScroll';
+import { LeftSide, RightSide } from './OnScroll';
 import { ShowcaseCard } from '../projects/Showcase';
 
 const events = [
@@ -89,16 +89,16 @@ export default function Events() {
           </div>
         </div>
 
-
-        <div className=" hidden md:flex bg-red-400">
+        <RightSide>
+          <div className=" hidden md:flex bg-red-400">
           {/* <img
 
             className="rounded-md object-cover"
             alt="feature image"
             src="/home/events.jpg"
           /> */}
-          <div className="event-list px-4 py-4 flex gap-4 overflow-auto">
-            {data.map((event, index) => (
+            <div className="event-list px-4 py-4 flex gap-4 overflow-auto">
+              {data.map((event, index) => (
               <ShowcaseCard
                 key={index}
                 title={event.title}
@@ -107,9 +107,11 @@ export default function Events() {
                 image_link = {event.image_link}
               />
               
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </RightSide>
+        
 
 
         <div className="flex">

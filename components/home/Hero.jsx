@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ClubLogo from "../ClubLogo";
 import { Reveal } from "./Reveal";
-
+import { Shapes } from "./OnScroll";
+import { motion } from "framer-motion";
 // const navigation = [
 //   { name: 'Product', href: '#' },
 //   { name: 'Features', href: '#' },
@@ -15,7 +16,32 @@ export default function Hero() {
   return (
     <div className="HeroContainer snap-start flex-shrink-0 bg-white">
       <div className=" relative isolate px-6 pt-14 lg:px-8 bg-green-500">
-        <div className="mx-auto max-w-2xl py-8 sm:py-18 lg:py-26 bg-red-500 align-middle">
+        {/* <Shapes/> */}
+
+        {/* first yellow ball */}
+        <motion.div
+        style={{
+          height: "50px",
+          width: "50px",
+          background: "yellow",
+        }}
+        animate={{
+          x: [100, 200, 400, 150],
+          y: [100, 200, -300, 150],
+            scale: [1, 1.2, 1.4, 1, 1],
+          rotate: [0, 0, 270, 270, 0],
+          transition: {
+            duration: 2,
+            repeat: Infinity,
+          },
+        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+      }}
+      ></motion.div>
+
+
+
+        
+        <div className="mx-auto max-w-2xl py-8 sm:py-18 lg:py-26  bg-red-500 align-middle">
           <div className="text-center">
             {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Data to enrich your online business
@@ -32,7 +58,7 @@ export default function Hero() {
                 {/*<a href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Join Us <span aria-hidden="true">&rarr;</span>
-  </a> */}
+                </a> */}
               </div>
               </Reveal>
               
@@ -51,6 +77,31 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
+        {/* red ball */}
+        <div className=" ">
+          <motion.div
+          style={{
+            height: "50px",
+            width: "50px",
+            background: "red",
+          }}
+          animate={{
+          //x: [100, 200, 400, 150],
+          //y: [100, 200, -300, 150],
+            x: [-300, 150, 100, 200],
+            y: [400,150,100,200],
+            scale: [1, 1.2, 1.4, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            transition: {
+              duration: 2,
+              repeat: Infinity,
+            },
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+        }}
+        ></motion.div>
+      </div>
+        {/* <Shapes/> */}
       </div>
     </div>
   );

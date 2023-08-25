@@ -10,9 +10,9 @@ export const RightSide = ( { children, width = "fit-content" }: Props) => {
     return (
         <div >
             <motion.div 
-                initial={{opacity:0, scale:0, x: 500}}
+                initial={{opacity:0, scale:0, x: 500 }}
                 whileInView={{opacity: 1, scale: 1, x: 0}}
-                transition={{duration: 0.6}}
+                transition={{duration: 0.8}}
             >
                 {children}
             </motion.div>    
@@ -26,7 +26,7 @@ export const LeftSide = ( { children, width = "fit-content" }: Props) => {
         <div >
             <motion.div 
                 
-                initial={{opacity:0, scale:0, x: 500}}
+                initial={{opacity:0, scale:0, x: -500}}
                 whileInView={{opacity: 1, scale: 1, x: 0}}
                 transition={{duration: 0.6}}
             >
@@ -35,3 +35,25 @@ export const LeftSide = ( { children, width = "fit-content" }: Props) => {
         </div>
     );
 };
+
+
+
+
+
+export const Shapes = ( ) => {
+    return (
+        <div className=" bg-pink-400"
+  style={{
+
+    justifyContent: "center",
+    alignItems: "center",
+    
+    flexDirection: "column",
+    
+  }}
+>
+  {/* closing addition */}
+  
+</div>
+    )
+}

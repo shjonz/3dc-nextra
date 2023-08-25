@@ -11,6 +11,7 @@ import Example from "@components/Footer";
 import React, { useEffect, useRef, useState} from "react";
 import { Reveal } from "./Reveal";
 import Box from "./ScrollAnimationTrigger";
+import {Shapes} from "./OnScroll";
 
 const RevealOnScroll = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,12 +64,8 @@ function Home() {
         <Feature />
       </div>  */}
       <div className="snap-y snap-mandatory h-screen w-screen overflow-auto flex-col">
-        
         <Hero/>
         <About/>
-        <Box />
-        
-        
         <Events/>
         <Newsletter/>
         <Disclaimer/>

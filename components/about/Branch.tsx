@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Branch() {
   return (
@@ -24,7 +25,7 @@ export default function Branch() {
                     <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                         <h3>
                             <a
-                                href="javascript:void(0)"
+                                href="/sample"
                                 className="
                                 font-semibold
                                 text-dark text-xl
@@ -46,7 +47,7 @@ export default function Branch() {
                             elit. Lorem consectetur adipiscing elit.
                         </p>
                         <a
-                            href="javascript:void(0)"
+                            href="/sample"
                             className="
                             inline-block
                             py-2
@@ -57,9 +58,20 @@ export default function Branch() {
                             font-medium
                             hover:border-primary hover:bg-primary hover:text-white
                             transition
+                            
                             "
                             >
-                        View Details
+                            <motion.button
+
+                                whileHover={{
+                                scale: 1.1,
+                                transition: { yoyo: Infinity },
+                                
+                            }}
+                            >
+                                View Details
+                            </motion.button>
+                        
                         </a>
                     </div>
                     </div>
@@ -74,7 +86,7 @@ export default function Branch() {
                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                   <h3>
                      <a
-                        href="javascript:void(0)"
+                        href="/sample"
                         className="
                         font-semibold
                         text-dark text-xl
@@ -95,6 +107,7 @@ export default function Branch() {
                      Lorem ipsum dolor sit amet pretium consectetur adipiscing
                      elit. Lorem consectetur adipiscing elit.
                   </p>
+                  
                   <a
                      href="javascript:void(0)"
                      className="
