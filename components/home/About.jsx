@@ -9,6 +9,7 @@ import {
 import EventCard from './EventCard';
 import { Reveal } from "./Reveal";
 import {LeftSide} from "./OnScroll"
+import {ExcoCard } from "../about/Team";
 
 const features = [
   {
@@ -33,14 +34,34 @@ const features = [
 
 const exco = [
   {
-    title: 'President',
-    date: 'Asyraff',
-    description: 'Join us for a day of live music and fun!',
+    name: 'Asyraff',
+    role: 'Vice President',
+    description: 'i llike pie',
+    github: 'www.google.com',
+    linkedin: 'www.google.com',
+    email: 'john@gmail.com',
+    telegram:'www.google.com',
+    href: 'www.google.com'
   },
   {
-    title: 'Vice President',
-    date: 'Ryan',
-    description: 'Explore beautiful artworks from local artists.',
+    name: 'Ryan',
+    role: 'Vice President',
+    description: 'i llike pie',
+    github: 'www.google.com',
+    linkedin: 'www.google.com',
+    email: 'john@gmail.com',
+    telegram:'www.google.com',
+    href: 'www.google.com'
+  },
+  {
+    name: 'john doe',
+    role: 'President',
+    description: 'i llike pie',
+    github: 'www.google.com',
+    linkedin: 'www.google.com',
+    email: 'john@gmail.com',
+    telegram:'www.google.com',
+    href: 'www.google.com'
   },
   // Add more event objects as needed
 ];
@@ -48,18 +69,19 @@ const exco = [
 export default function About() {
   return (
     <div className="overflow-hidden snap-start flex-shrink-0 bg-white py-20 sm:py-32" id="about">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-black">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 bg-green-500 ">
+          <div className="lg:pr-8 lg:pt-4 bg-red-500">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
                 Hello
               </h2>
 
               <LeftSide>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-fade ">
-                Welcome to 3DC
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-fade " >
+                Welcome to 3DC 
               </p>
+              {/* <img src="imgs\logos\GDSC.webp"/> */}
               </LeftSide>
               
               
@@ -94,9 +116,13 @@ export default function About() {
                   </div>
                 ))}
               </dl>
+
+
             </div>
           </div>
-          <Container>
+
+
+          <div className="  w-auto py-10  ">
             
               {/* <iframe
                 src="https://www.youtube.com/embed/DcN_hcHXR_0"
@@ -105,18 +131,19 @@ export default function About() {
               ></iframe> "ratio ratio-16x9 " */}
             
 
-            <div className="exco-profilecard">
+            <div className="exco-profilecard bg-orange-500 px-4 py-4 flex gap-4 overflow-auto">
               {exco.map((event, index) => (
-                <EventCard
-                  key={index}
-                  title={event.title}
-                  date={event.date}
-                  description={event.description}
-                />
-              
-              ))}
+                <ExcoCard key={index}
+                name={event.name}
+                role={event.role}
+                description={event.description}
+                github={event.github}
+                linkedin={event.linkedin}
+                email={event.email}
+                telegram={event.telegram}  />
+              ) )}
             </div>
-          </Container>
+          </div>
         </div>
       </div>
     </div>

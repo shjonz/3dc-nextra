@@ -4,7 +4,7 @@ import {MdDateRange,MdLocationOn} from "react-icons/md";
 
 const projects = [
   {
-    name: '3DC Website',
+    title: '3DC Website',
     description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
     date: '04/08/23 3pm',
     venue: 'Thinktank 13 2.307',
@@ -14,7 +14,7 @@ const projects = [
   },
 
   {
-    name: '3DC Website a very very very very very long title',
+    title: '3DC Website a very very very very very long title',
     description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
     date: '04/08/23 3pm',
     venue: 'Thinktank 13 2.307',
@@ -23,7 +23,7 @@ const projects = [
     image:'https://images.ctfassets.net/hrltx12pl8hq/3j5RylRv1ZdswxcBaMi0y7/b84fa97296bd2350db6ea194c0dce7db/Music_Icon.jpg',
   },
   {
-    name: '3DC Website',
+    title: '3DC Website',
     description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
     date: '04/08/23 3pm',
     venue: 'Thinktank 13 2.307',
@@ -33,14 +33,14 @@ const projects = [
   },
 
   {
-    name: '3DC Website a very very very very very long title',
+    title: '3DC Website a very very very very very long title',
     description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
     date: '04/08/23 3pm',
     venue: 'Thinktank 13 2.307',
     type: 'Workshop',
     href: '',
   },  {
-    name: '3DC Website',
+    title: '3DC Website',
     description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
     date: '04/08/23 3pm',
     venue: 'Thinktank 13 2.307',
@@ -50,13 +50,65 @@ const projects = [
   },
 
   {
-    name: '3DC Website a very very very very very long title',
+    title: '3DC Website a very very very very very long title',
     description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
     date: '04/08/23 3pm',
     venue: 'Thinktank 13 2.307',
     type: 'Project',
     href: '',
-    image:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+  },
+
+  {
+    title: '3DC Website a very very very very very long title',
+    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
+    date: '04/08/23 3pm',
+    venue: 'Thinktank 13 2.307',
+    type: 'Project',
+    href: '',
+    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+  },
+
+  {
+    title: '3DC Website a very very very very very long title',
+    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
+    date: '04/08/23 3pm',
+    venue: 'Thinktank 13 2.307',
+    type: 'Project',
+    href: '',
+    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+  },
+
+
+  {
+    title: '3DC Website a very very very very very long title',
+    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
+    date: '04/08/23 3pm',
+    venue: 'Thinktank 13 2.307',
+    type: 'Project',
+    href: '',
+    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+  },
+
+
+  {
+    title: '3DC Website a very very very very very long title',
+    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
+    date: '04/08/23 3pm',
+    venue: 'Thinktank 13 2.307',
+    type: 'Project',
+    href: '',
+    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+  },
+
+  {
+    title: '3DC Website a very very very very very long title',
+    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
+    date: '04/08/23 3pm',
+    venue: 'Thinktank 13 2.307',
+    type: 'Project',
+    href: '',
+    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
   },
 
 ];
@@ -124,7 +176,7 @@ export default function Showcase() {
   return (
       // <div className="px-4 py-4 grid sm:grid-cols-1 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
       <div className="px-4 py-4 flex gap-4 overflow-auto">
-        {data.map((project) => (
+        {projects.map((project) => (
           <ShowcaseCard {...project} />
         ))}
       </div>

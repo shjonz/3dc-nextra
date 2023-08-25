@@ -2,50 +2,50 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import { Reveal } from "../home/Reveal";
 
-// const members = [
-//   {
-//     name: 'martha stuward',
-//     role: 'coffee getter',
-//     description: 'does some work and drinks coffee',
-//     github: 'www.google.com',
-//     linkedin: 'www.google.com',
-//     email: '',
-//     telegram:'www.google.com',
-//     href: ''
-//   },
+const members = [
+  {
+    name: 'martha stuward',
+    role: 'coffee getter',
+    description: 'does some work and drinks coffee',
+    github: 'www.google.com',
+    linkedin: 'www.google.com',
+    email: '',
+    telegram:'www.google.com',
+    href: 'www.google.com'
+  },
 
-//   {
-//     name: 'john doe',
-//     role: 'watcher',
-//     description: 'i llike pie',
-//     github: 'www.google.com',
-//     linkedin: 'www.google.com',
-//     email: 'john@gmail.com',
-//     telegram:'www.google.com',
-//     href: ''
-//   },
-//   {
-//     name: 'jane doe',
-//     role: 'doer',
-//     description: 'fafwafwaf afwawfaf awffw f fw afwfawfwa awffwafwaff awfwfwaf',
-//     github: 'Thinktank 13 2.307',
-//     linkedin: 'Project',
-//     email: 'doe@gmail.com',
-//     telegram:'www.google.com',
-//     href: ''
-//   },
+  {
+    name: 'john doe',
+    role: 'watcher',
+    description: 'i llike pie',
+    github: 'www.google.com',
+    linkedin: 'www.google.com',
+    email: 'john@gmail.com',
+    telegram:'www.google.com',
+    href: 'www.google.com'
+  },
+  {
+    name: 'jane doe',
+    role: 'doer',
+    description: 'fafwafwaf afwawfaf awffw f fw afwfawfwa awffwafwaff awfwfwaf',
+    github: 'Thinktank 13 2.307',
+    linkedin: 'Project',
+    email: 'doe@gmail.com',
+    telegram:'www.google.com',
+    href: 'www.google.com'
+  },
 
-//   {
-//     name: 'prince harry',
-//     role: 'the prince',
-//     description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English.',
-//     github: 'Thinktank 13 2.307',
-//     linkedin: 'Workshop',
-//     email: 'harry@gmail.com',
-//     telegram:'www.google.com',
-//     href: ''
-//   },
-// ];
+  {
+    name: 'prince harry',
+    role: 'the prince',
+    description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English.',
+    github: 'Thinktank 13 2.307',
+    linkedin: 'Workshop',
+    email: 'harry@gmail.com',
+    telegram:'www.google.com',
+    href: 'www.google.com'
+  },
+];
 
 
 
@@ -121,39 +121,39 @@ const TelegramButton = ({ profileUrl }) => {
     );
   };
 
-// const ExcoCard = ({name, role, description, github, linkedin, email, telegram, href}) => {
-//   return (
-//     <a href={href}>
-//       <div className="mb-24 md:mb-0 py-20">
-//           <div
-//               className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-//               <div className="flex justify-center">
-//                   <div className="flex justify-center -mt-[75px]">
-//                       <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
-//                       className="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]" alt="Avatar" />
-//                   </div>
-//               </div>
+export const ExcoCard = ({name, role, description, github, linkedin, email, telegram, href}) => {
+  return (
+    <div className="">
+      <div className="mb-24 md:mb-0 py-20">
+          <div
+              className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              <div className="flex justify-center">
+                  <div className="flex justify-center -mt-[75px]">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
+                      className="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]" alt="Avatar" />
+                  </div>
+              </div>
 
-//               <div className="p-6">
-//                   <h5 className="mb-1 text-lg font-bold">{name}</h5>
-//                   <p className="mb-6">{role}</p>
-//                   <p className="mb-6">{description}</p>
-//                   <ul className="mx-auto flex list-inside justify-center">
+              <div className="p-6">
+                  <h5 className="mb-1 text-lg font-bold">{name}</h5>
+                  <p className="mb-6">{role}</p>
+                  <p className="mb-6">{description}</p>
+                  <ul className="mx-auto flex list-inside justify-center">
 
-//                   <GitHubButton profileUrl={github}/>
-//                   <LinkedinButton profileUrl={linkedin}/>
-//                   <EmailButton emailAddress={email}/>
-//                   <TelegramButton profileUrl={telegram}/>
+                  <GitHubButton profileUrl={github}/>
+                  <LinkedinButton profileUrl={linkedin}/>
+                  <EmailButton emailAddress={email}/>
+                  <TelegramButton profileUrl={telegram}/>
 
-//                   </ul>
-//               </div>
-//           </div>
-//       </div>
-//     </a>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
 
 
-//   );
-// }
+  );
+}
   
 
 export default function Team() {
@@ -175,16 +175,18 @@ export default function Team() {
             <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
 
                 {/* meant to make the cards dynamic but has hydration issues currently */}
-                {/* <div className="px-4 py-4 flex gap-4 overflow-auto">
-                  {members.map((project) => (
-                    <ExcoCard {...project} />
+                <div className="px-4 py-4 flex gap-4 overflow-auto">
+                  {members.map((project, key) => (
+                    <ExcoCard {...project}  />
                   ))}
-                </div> */}
+                </div>
 
 
                 {/* card */}
+
                 
-                <div className="mb-24 md:mb-0 py-20">
+                
+                {/* <div className="mb-24 md:mb-0 py-20">
                     <div
                         className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="flex justify-center">
@@ -197,8 +199,7 @@ export default function Team() {
                         <div className="p-6">
                            <Reveal>
                             <h5 className="mb-1 text-lg font-bold">Marta Smith</h5>
-                            {/* </Reveal>
-                            <Reveal> */}
+                            
                             <p className="mb-6">Frontend Developer</p>
                             </Reveal>
                             <Reveal>
@@ -290,9 +291,9 @@ export default function Team() {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-            </div>
+              </div>
         </section>
   );
 }

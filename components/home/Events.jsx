@@ -43,9 +43,11 @@ export default function Events() {
 
 
   return (
-    <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="space-y-4">
+    <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 lg:px-8 bg-black">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-green-400">
+
+
+        <div className="space-y-4 bg-yellow-100">
           <LeftSide>
           <h2 className="font-bold">Events</h2>
           </LeftSide>
@@ -68,20 +70,7 @@ export default function Events() {
             ))}
           </div> */}
 
-          <div className="event-list">
-            {events.map((event, index) => (
-              <ShowcaseCard
-                key={index}
-                title={event.title}
-                date={event.date}
-                description={event.description}
-              />
-              
-            ))}
-          </div>
-
-
-
+          
 
           {/* <div className="hidden md:flex">
             
@@ -99,13 +88,30 @@ export default function Events() {
             </a>
           </div>
         </div>
-        <div className="hidden md:flex">
-          <img
+
+
+        <div className=" hidden md:flex bg-red-400">
+          {/* <img
+
             className="rounded-md object-cover"
             alt="feature image"
             src="/home/events.jpg"
-          />
+          /> */}
+          <div className="event-list px-4 py-4 flex gap-4 overflow-auto">
+            {data.map((event, index) => (
+              <ShowcaseCard
+                key={index}
+                title={event.title}
+                date={event.date}
+                description={event.description}
+                image_link = {event.image_link}
+              />
+              
+            ))}
+          </div>
         </div>
+
+
         <div className="flex">
           <a href="/events" className="">
             Show More

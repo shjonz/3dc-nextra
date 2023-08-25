@@ -14,8 +14,8 @@ export default function Hero() {
 
   return (
     <div className="HeroContainer snap-start flex-shrink-0 bg-white">
-      <div className=" relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-8 sm:py-18 lg:py-26">
+      <div className=" relative isolate px-6 pt-14 lg:px-8 bg-green-500">
+        <div className="mx-auto max-w-2xl py-8 sm:py-18 lg:py-26 bg-red-500 align-middle">
           <div className="text-center">
             {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Data to enrich your online business
@@ -39,7 +39,9 @@ export default function Hero() {
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <h2 className="text-center">Student</h2>
-              <a className=" relative rounded-full px-4 py-2 bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              <a className=" relative rounded-full px-4 py-2 bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm
+               hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+               href="">
                 Join us
               </a>
               <h3>Collaborator</h3>
