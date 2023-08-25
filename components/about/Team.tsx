@@ -195,11 +195,15 @@ export default function Team() {
                         </div>
 
                         <div className="p-6">
-                          {/* <Reveal> */}
+                           <Reveal>
                             <h5 className="mb-1 text-lg font-bold">Marta Smith</h5>
+                            {/* </Reveal>
+                            <Reveal> */}
                             <p className="mb-6">Frontend Developer</p>
+                            </Reveal>
+                            <Reveal>
                             <p className="mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            {/* </Reveal> */}
+                           </Reveal> 
                             <ul className="mx-auto flex list-inside justify-center">
 
                             <GitHubButton profileUrl={'www.google.com'}/>

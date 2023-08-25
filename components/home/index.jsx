@@ -74,21 +74,7 @@ function Home() {
         <Disclaimer/>
         {/* <Example /> */}
 
-        {/* <div className="snap-center flex-shrink-0"> 
-          <Hero />
-        </div>
-        <div className="snap-center flex-shrink-0"> 
-          <About />
-        </div>
-        <div className="snap-center flex-shrink-0"> 
-          <Events />
-        </div>
-        <div className="snap-center flex-shrink-0"> 
-          <Newsletter />
-        </div>
-        <div className="snap-start flex-shrink-0"> 
-          <Disclaimer />
-        </div> */}
+        
 
       </div>
     </>

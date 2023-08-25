@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import EventCard from './EventCard';
 import { LeftSide } from './OnScroll';
+import { ShowcaseCard } from '../projects/Showcase';
 
 const events = [
   {
@@ -17,6 +18,30 @@ const events = [
 ];
 
 export default function Events() {
+  const [ data, setData ] = useState([]);
+  useEffect( () =>{
+    const data = getData();
+    console.log('get data here ', JSON.stringify(data[0]));
+  }, [])
+
+
+  //RYAN this is how to call backend from front end
+  const getData = async () => {
+    //to test ur data, type this link http://localhost:3000/api/projects/get inside ur browser. you will either get
+    //empty array or some data.
+    
+    const res = await fetch(`http://localhost:3000/api/projects/get`, {
+      cache: "no-store",
+    }).then(
+      response => response.json()
+    ).then(data => {
+      console.log('data ', data);
+      setData(data);
+    });
+  
+  };
+
+
   return (
     <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -30,7 +55,8 @@ export default function Events() {
             Interested in hackathons, competitions, and other events? Stay up to
             date with events and find teammates here.
           </p>
-          <div className="event-list">
+
+          {/* <div className="event-list">
             {events.map((event, index) => (
               <EventCard
                 key={index}
@@ -40,7 +66,23 @@ export default function Events() {
               />
               
             ))}
+          </div> */}
+
+          <div className="event-list">
+            {events.map((event, index) => (
+              <ShowcaseCard
+                key={index}
+                title={event.title}
+                date={event.date}
+                description={event.description}
+              />
+              
+            ))}
           </div>
+
+
+
+
           {/* <div className="hidden md:flex">
             
             <img

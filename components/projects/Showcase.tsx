@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {MdDateRange,MdLocationOn} from "react-icons/md";
 
 
@@ -61,18 +61,18 @@ const projects = [
 
 ];
 
-function ShowcaseCard(props) {
-  const { name, description, href, date, venue, type} = props;
+export function ShowcaseCard(props) {
+  const { title, description, image_link, href, date, venue, type} = props;
   var shortdesc = ''
   if (description.length < 120){shortdesc = description}
   else {shortdesc = description.slice(0,90)+"..."}
   var shorttitle = ''
-  if (name.length < 36){shorttitle = name}
-  else {shorttitle = name.slice(0,36)+"..."}
+  if (title.length < 36){shorttitle = title}
+  else {shorttitle = title.slice(0,36)+"..."}
 
   return (
     <a href={props.href}><div className="bg-white border border-gray-200 hover:-translate-y-1 overflow-auto rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-60 h-full">
-      <img className="rounded-t-lg object-cover h-40 w-60 aspect-video" src={props.image} alt=""/>
+      <img className="rounded-t-lg object-cover h-40 w-60 aspect-video" src={props.image_link} alt=""/>
       <p className="px-5 pt-3 text-xs text-gray-400 font-bold">{props.type}</p>
 
       
@@ -94,6 +94,7 @@ function ShowcaseCard(props) {
 
   );
 }
+
 
 export default function Showcase() {
   const [ data, setData ] = useState([]);
