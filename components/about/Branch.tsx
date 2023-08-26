@@ -16,7 +16,7 @@ export default function Branch() {
         <div className="container">
             <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                    <div className="bg-white rounded-lg overflow-hidden mb-10">
+                    <div className="bg-white rounded-lg overflow-hidden mb-10 hover:-translate-y-1">
                     <img
                         src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-01.jpg"
                         alt="image"
@@ -77,7 +77,7 @@ export default function Branch() {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-            <div className="bg-white rounded-lg overflow-hidden mb-10">
+            <div className="bg-white rounded-lg overflow-hidden mb-10 hover:-translate-y-1">
                <img
                   src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-02.jpg"
                   alt="image"
@@ -128,7 +128,7 @@ export default function Branch() {
             </div>
          </div>
                 <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                    <div className="bg-white rounded-lg overflow-hidden mb-10">
+                    <div className="bg-white rounded-lg overflow-hidden mb-10 hover:-translate-y-1">
                     <img
                         src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-03.jpg"
                         alt="image"
