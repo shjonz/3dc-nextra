@@ -9,7 +9,8 @@ import {
 import EventCard from './EventCard';
 import { Reveal } from "./Reveal";
 import {LeftSide, RightSide} from "./OnScroll"
-import {ExcoCard } from "../about/Team";
+import {ExcoCards } from "../about/ExcoCard";
+import { Team } from "../about/Team";
 
 const features = [
   {
@@ -130,7 +131,7 @@ export default function About() {
               ></iframe> "ratio ratio-16x9 " */}
             <div className="exco-profilecard bg-orange-500 px-4 py-4 flex gap-4 overflow-auto">
               {exco.map((event, index) => (
-                <ExcoCard key={index}
+                <ExcoCards key={index}
                 name={event.name}
                 role={event.role}
                 description={event.description}
