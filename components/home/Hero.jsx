@@ -79,16 +79,16 @@ export default function Hero() {
         </div>
 
         {/* red ball */}
-        <div className=" ">
+        <div className="  absolute ">
           <motion.div
-          style={{
-            height: "50px",
-            width: "50px",
-            background: "red",
-          }}
-          animate={{
-          //x: [100, 200, 400, 150],
-          //y: [100, 200, -300, 150],
+            style={{
+              height: "50px",
+              width: "50px",
+              background: "red",
+            }}
+            animate={{
+            //x: [100, 200, 400, 150],
+            //y: [100, 200, -300, 150],
             x: [-300, 150, 100, 200],
             y: [400,150,100,200],
             scale: [1, 1.2, 1.4, 1, 1],
@@ -97,10 +97,10 @@ export default function Hero() {
               duration: 2,
               repeat: Infinity,
             },
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-        }}
-        ></motion.div>
-      </div>
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            }}
+          ></motion.div>
+        </div>
         {/* <Shapes/> */}
       </div>
     </div>
