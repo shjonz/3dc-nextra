@@ -14,12 +14,14 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="HeroContainer snap-start flex-shrink-0 bg-white">
-      <div className=" relative isolate px-6 pt-14 lg:px-8 bg-green-500">
-        {/* <Shapes/> */}
+    <div className="HeroContainer snap-center flex-shrink-0 bg-white align-middle">
+      <div className=" relative isolate px-6 bg-green-500">
+
+      
+        {/* <Shapes/> sm md lg xl 2xl  */}
 
         {/* first yellow ball */}
-        <motion.div
+        {/* <motion.div
         style={{
           height: "50px",
           width: "50px",
@@ -36,7 +38,7 @@ export default function Hero() {
           },
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
-      ></motion.div>
+      ></motion.div> */}
 
 
 
@@ -65,13 +67,13 @@ export default function Hero() {
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <h2 className="text-center">Student</h2>
-              <a className=" relative rounded-full px-4 py-2 bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm
+              <a className=" relative rounded-full bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm
                hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                href="">
                 Join us
               </a>
               <h3>Collaborator</h3>
-              <a className="relative rounded-full px-4 py-2 bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              <a className="relative rounded-full px-4 py-2 bg-indigo-600 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 Work with us
               </a>
             </div>
@@ -79,7 +81,7 @@ export default function Hero() {
         </div>
 
         {/* red ball */}
-        <div className="  absolute ">
+        {/* <div className="  absolute ">
           <motion.div
             style={{
               height: "50px",
@@ -100,7 +102,7 @@ export default function Hero() {
             borderRadius: ["20%", "20%", "50%", "50%", "20%"],
             }}
           ></motion.div>
-        </div>
+        </div> */}
         {/* <Shapes/> */}
       </div>
     </div>

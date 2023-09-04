@@ -65,16 +65,17 @@ const exco = [
     href: 'www.google.com'
   },
   // Add more event objects as needed
+  //sm md lg xl 2xl 
 ];
 
 export default function About() {
   return (
-    <div className="overflow-hidden snap-start flex-shrink-0 bg-white py-20 sm:py-32" id="about">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-black">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 bg-green-500 ">
+    <div className=" snap-center flex-shrink-0 bg-white lg:py-20 sm:py-32" id="about">
+      <div className="mx-auto lg:px-50 lg:py-50 md:px-40  bg-black">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 bg-green-500 ">
           <div className="lg:pr-8 lg:pt-4 bg-red-500">
-            <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            <div className="lg:max-w-lg ">
+              <h2 className="text-base font-semibold leading-5 text-indigo-600">
                 Hello
               </h2>
 
@@ -123,13 +124,13 @@ export default function About() {
           </div>
 
           <RightSide >
-          <div className="  w-auto py-10  ">
+          <div className=" md:h-max lg:h-max xl:h-max ">
               {/* <iframe
                 src="https://www.youtube.com/embed/DcN_hcHXR_0"
                 title="YouTube video"
                 allowfullscreen
               ></iframe> "ratio ratio-16x9 " */}
-            <div className="exco-profilecard bg-orange-500 px-4 py-4 flex gap-4 overflow-auto">
+            <div className="exco-profilecard bg-orange-500 lg:px-4 lg:pt-40 flex gap-4 overflow-auto">
               {exco.map((event, index) => (
                 <ExcoCards key={index}
                 name={event.name}

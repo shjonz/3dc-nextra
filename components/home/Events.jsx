@@ -15,6 +15,7 @@ const events = [
     description: 'Explore beautiful artworks from local artists.',
   },
   // Add more event objects as needed
+  //sizes sm md lg xl 2xl 
 ];
 
 export default function Events() {
@@ -43,7 +44,7 @@ export default function Events() {
 
 
   return (
-    <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 lg:px-8 bg-black">
+    <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 md:px-40 lg:px-40 xl:px-30 bg-black">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-green-400">
 
 
