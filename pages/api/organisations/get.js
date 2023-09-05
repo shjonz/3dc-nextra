@@ -1,4 +1,4 @@
-import { prisma } from "../../utils/connect";
+import { prisma } from "../../../components/utils/connect";
 
 export default async function handler(req, res) {
   try {
