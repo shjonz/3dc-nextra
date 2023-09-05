@@ -31,8 +31,11 @@ export default function Events() {
     //to test ur data, type this link http://localhost:3000/api/projects/get inside ur browser. you will either get
     //empty array or some data.
     
-    const res = await fetch(`http://localhost:3000/api/projects/get`, {
-    //const res = await fetch(`https://3dc-nextra-phi.vercel.app/api/projects/get`, {
+    //for deployment
+    //const res = await fetch(`http://localhost:3000/api/projects/get`, {
+    
+    //for production
+    const res = await fetch(`https://3dc-nextra-phi.vercel.app/api/projects/get`, {
       cache: "no-store",
     }).then(
       response => response.json()
