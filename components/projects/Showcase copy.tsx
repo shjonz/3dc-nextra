@@ -84,6 +84,5 @@ export default function Showcase() {
           <ShowcaseCard {...project} />
         ))}
       </div>
-    </>
   );
 }
