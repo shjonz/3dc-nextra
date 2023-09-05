@@ -42,18 +42,24 @@ export default function Newsletter() {
                 for a particular stream in tech.
                 </dd> */}
               <div className="flex gap-x-2 mt-2">
-                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                <a
+                  className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10"
+                  href="https://www.linkedin.com/company/gdsc-sutd/mycompany/"
+                >
                   <CalendarDaysIcon
                     className="h-6 w-6 text-gray"
                     aria-hidden="true"
                   />
-                </div>
-                <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
+                </a>
+                <a
+                  className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10"
+                  href="https://www.instagram.com/3dc_sutd/?hl=en"
+                >
                   <CalendarDaysIcon
                     className="h-6 w-6 text-gray"
                     aria-hidden="true"
                   />
-                </div>
+                </a>
                 <div className="rounded-md bg-gray/5 p-2 ring-1 ring-gray/10">
                   <CalendarDaysIcon
                     className="h-6 w-6 text-gray"

@@ -5,49 +5,74 @@ import { ExcoCards } from "./ExcoCard";
 //supposed to be the database
 const members = [
   {
-    name: 'martha stuward',
-    role: 'coffee getter',
-    description: 'does some work and drinks coffee',
+    name: 'Joshua Pacheco',
+    role: 'President',
+    description: 'Just a man who likes to create stuff',
     github: 'www.google.com',
-    linkedin: 'www.google.com',
-    email: '',
+    linkedin: 'https://www.linkedin.com/in/markjoshuapacheco/',
+    email: '1007190@mymail.sutd.edu.sg',
     telegram:'www.google.com',
-    image: "https://mdbcdn.b-cdn.net/img/new/avatars/4.jpg",
+    image: "exco/pache.jpg",
     href: 'www.google.com'
   },
 
   {
-    name: 'john doe',
-    role: 'watcher',
-    description: 'i llike pie',
+    name: 'Ng Wei Hao',
+    role: 'Vice President - Tech',
+    description: 'HELLO WORLD!',
     github: 'www.google.com',
-    linkedin: 'www.google.com',
-    email: 'john@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/wei-hao-ng-4a02751a1/',
+    email: '1006977@mymail.sutd.edu.sg',
     telegram:'www.google.com',
-    image: "https://mdbcdn.b-cdn.net/img/new/avatars/2.jpg",
+    image: "exco/ry.jpg",
     href: 'www.google.com'
   },
+
   {
-    name: 'jane doe',
-    role: 'doer',
-    description: 'fafwafwaf afwawfaf awffw f fw aaf',
+    name: 'Asyraf Omar',
+    role: 'Vice President - Projects',
+    description: 'No matter how devastated you may be by your own weakness or uselessness… set your heart ablaze',
     github: 'Thinktank 13 2.307',
     linkedin: 'Project',
-    email: 'doe@gmail.com',
+    email: '1006938@mymail.sutd.edu.sg',
     telegram:'www.google.com',
-    image: "https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg",
+    image: "exco/asyraf.png",
     href: 'www.google.com'
   },
 
   {
-    name: 'prince harry',
-    role: 'the prince',
-    description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English.',
+    name: 'Fushia Virtucio',
+    role: 'Marketing Head',
+    description: "TODAY'S GOOD MOOD IS SPONSORED BY COFFEE.",
     github: 'Thinktank 13 2.307',
     linkedin: 'Workshop',
-    email: 'harry@gmail.com',
+    email: '1007179@mymail.sutd.edu.sg',
     telegram:'www.google.com',
-    image: "https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg",
+    image: "exco/fushia.jpg",
+    href: 'www.google.com'
+  },
+
+  {
+    name: 'Pankti Shah',
+    role: 'Secretary',
+    description: 'An absolute joy to have around.',
+    github: 'Thinktank 13 2.307',
+    linkedin: 'https://www.linkedin.com/in/pankti-shah-6bb104221/',
+    email: '1007130@mymail.sutd.edu.sg',
+    telegram:'www.google.com',
+    image: "exco/pankti.jpg",
+    href: 'www.google.com'
+  },
+
+  {
+    name: 'Hun Chong Tan',
+    role: 'Treasurer',
+    description: 'Technology is best when it brings people together.',
+    github: 'Thinktank 13 2.307',
+    linkedin: 'https://www.linkedin.com/in/tanhunchong/',
+    email: '1006643@mymail.sutd.edu.sg',
+    telegram:'www.google.com',
+    image: "exco/hunch.jpg",
     href: 'www.google.com'
   },
 ];

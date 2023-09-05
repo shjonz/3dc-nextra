@@ -43,8 +43,8 @@ export default function Branch() {
                             </a>
                         </h3>
                         <p className="text-base text-body-color leading-relaxed mb-7">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                            elit. Lorem consectetur adipiscing elit.
+                        Building a strong developer culture starts with us. We nurture the developers of tomorrow.
+
                         </p>
                         <a
                             href="/sample"
@@ -104,8 +104,7 @@ export default function Branch() {
                      </a>
                   </h3>
                   <p className="text-base text-body-color leading-relaxed mb-7">
-                     Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                     elit. Lorem consectetur adipiscing elit.
+                  Maintaining a strong developer culture is what we do. Surround yourself with the best.
                   </p>
                   
                   <a
@@ -155,8 +154,7 @@ export default function Branch() {
                             </a>
                         </h3>
                         <p className="text-base text-body-color leading-relaxed mb-7">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                            elit. Lorem consectetur adipiscing elit.
+                            Realize the potential of our club. We make it simple but significant.
                         </p>
                         <a
                             href="javascript:void(0)"

@@ -75,13 +75,15 @@ function ShowcaseCard(props) {
 }
 
 
-export default function Showcase() {
+export default function Showcase_past() {
   return (
+    <>
       <div>
         {/* grid  */}
         {projects.map((project) => (
           <ShowcaseCard {...project} />
         ))}
       </div>
+    </>
   );
 }
