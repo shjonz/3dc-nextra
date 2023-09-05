@@ -70,10 +70,10 @@ const exco = [
 
 export default function About() {
   return (
-    <div className=" snap-center flex-shrink-0 bg-white lg:py-20 sm:py-32" id="about">
-      <div className="mx-auto lg:px-50 lg:py-50 md:px-10  bg-black">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 bg-green-500 ">
-          <div className="lg:pr-8 lg:pt-4 bg-red-500">
+    <div className=" snap-center flex-shrink-0  lg:py-20 sm:py-32" id="about">
+      <div className="mx-auto lg:px-40 lg:py-40 md:px-10  ">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2  ">
+          <div className="lg:pr-8 lg:pt-4 ">
             <div className="lg:max-w-lg ">
               <h2 className="text-base font-semibold leading-5 text-indigo-600">
                 Hello
@@ -130,7 +130,7 @@ export default function About() {
                 title="YouTube video"
                 allowfullscreen
               ></iframe> "ratio ratio-16x9 " */}
-            <div className="exco-profilecard bg-orange-500 lg:px-4 lg:pt-40 flex gap-4 overflow-auto">
+            <div className="exco-profilecard  lg:px-4 lg:pt-40 flex gap-4 overflow-auto">
               {exco.map((event, index) => (
                 <ExcoCards key={index}
                 name={event.name}

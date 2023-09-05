@@ -15,13 +15,13 @@ export default function Hero() {
 
   return (
     <div className="HeroContainer snap-center flex-shrink-0 bg-white align-middle">
-      <div className=" relative isolate px-6 bg-green-500">
+      <div className=" relative isolate px-6 ">
 
       
         {/* <Shapes/> sm md lg xl 2xl  */}
 
         {/* first yellow ball */}
-        <div className=" relative top-60" >
+        <div className=" hidden xl:block 2xl:block lg:block relative top-60" >
         <motion.div
         
         style={{
@@ -46,7 +46,7 @@ export default function Hero() {
 
 
         
-        <div className="mx-auto max-w-2xl py-8 sm:py-18 lg:py-26  bg-red-500 align-middle">
+        <div className="mx-auto max-w-2xl py-8 sm:py-18 lg:py-26   align-middle">
           <div className="text-center">
             {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Data to enrich your online business
@@ -84,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* red ball */}
-        <div className="  absolute bottom-80 right-60">
+        <div className=" hidden xl:block 2xl:block lg:block absolute bottom-80 right-60">
           <motion.div
             style={{
               height: "50px",

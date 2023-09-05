@@ -63,7 +63,9 @@ function Home() {
       <div className="mx-4">
         <Feature />
       </div>  */}
-      <div className="snap-y snap-mandatory h-screen w-screen overflow-auto flex-col">
+      <div className=" lg:snap-y lg:snap-mandatory lg:h-screen lg:w-screen lg:overflow-auto lg:flex-col
+      xl:snap-y xl:snap-mandatory xl:h-screen xl:w-screen xl:overflow-auto xl:flex-col
+      2xl:snap-y 2xl:snap-mandatory 2xl:h-screen 2xl:w-screen 2xl:overflow-auto 2xl:flex-col">
         <Hero/>
         <About/>
         <Events/>
