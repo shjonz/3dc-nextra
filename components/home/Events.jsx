@@ -31,8 +31,8 @@ export default function Events() {
     //to test ur data, type this link http://localhost:3000/api/projects/get inside ur browser. you will either get
     //empty array or some data.
     
-    //const res = await fetch(`http://localhost:3000/api/projects/get`, {
-    const res = await fetch(`https://3dc-nextra-phi.vercel.app/api/projects/get`, {
+    const res = await fetch(`http://localhost:3000/api/projects/get`, {
+    //const res = await fetch(`https://3dc-nextra-phi.vercel.app/api/projects/get`, {
       cache: "no-store",
     }).then(
       response => response.json()
@@ -45,11 +45,11 @@ export default function Events() {
 
 
   return (
-    <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 md:px-40 lg:px-40 xl:px-30 bg-black">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-green-400">
-
-
+    <div className="snap-center flex-shrink-0 mx-auto max-w-7xl px-6 md:px-10 lg:px-40 xl:px-30 bg-black">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-10 bg-green-400">
         <div className="space-y-4 bg-yellow-100">
+
+
           <LeftSide>
           <h2 className="font-bold">Events</h2>
           </LeftSide>
@@ -92,7 +92,7 @@ export default function Events() {
         </div>
 
         <RightSide>
-          <div className=" hidden md:flex bg-red-400">
+          <div className="space-y-4 bg-red-400">
           {/* <img
 
             className="rounded-md object-cover"

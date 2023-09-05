@@ -71,7 +71,7 @@ const exco = [
 export default function About() {
   return (
     <div className=" snap-center flex-shrink-0 bg-white lg:py-20 sm:py-32" id="about">
-      <div className="mx-auto lg:px-50 lg:py-50 md:px-40  bg-black">
+      <div className="mx-auto lg:px-50 lg:py-50 md:px-10  bg-black">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 bg-green-500 ">
           <div className="lg:pr-8 lg:pt-4 bg-red-500">
             <div className="lg:max-w-lg ">
