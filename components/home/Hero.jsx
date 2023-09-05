@@ -21,7 +21,9 @@ export default function Hero() {
         {/* <Shapes/> sm md lg xl 2xl  */}
 
         {/* first yellow ball */}
-        {/* <motion.div
+        <div className=" relative top-60" >
+        <motion.div
+        
         style={{
           height: "50px",
           width: "50px",
@@ -38,7 +40,8 @@ export default function Hero() {
           },
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
-      ></motion.div> */}
+      ></motion.div>
+      </div>
 
 
 
@@ -81,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* red ball */}
-        {/* <div className="  absolute ">
+        <div className="  absolute bottom-80 right-60">
           <motion.div
             style={{
               height: "50px",
@@ -102,7 +105,7 @@ export default function Hero() {
             borderRadius: ["20%", "20%", "50%", "50%", "20%"],
             }}
           ></motion.div>
-        </div> */}
+        </div>
         {/* <Shapes/> */}
       </div>
     </div>
