@@ -77,7 +77,6 @@ function ShowcaseCard(props) {
 
 export default function Showcase() {
   return (
-    <>
       <div>
         {/* grid  */}
         {projects.map((project) => (

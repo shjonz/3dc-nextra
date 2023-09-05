@@ -5,92 +5,64 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: '3DC Website',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image:'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Event',
-    href: '/sample',
-    image:'https://images.ctfassets.net/hrltx12pl8hq/3j5RylRv1ZdswxcBaMi0y7/b84fa97296bd2350db6ea194c0dce7db/Music_Icon.jpg',
-  },
-  {
-    title: '3DC Website',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
+    title: 'Literacy in AI workshop',
+    description: 'AISG',
+    date: '26/07/23 3.30pm - 5.30pm',
+    venue: 'LT 4 2.404',
+    type: 'Workshop',
     href: '/sample',
     image:'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',
   },
 
   {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
+    title: '3DC Android Dev',
+    description: 'Android Studio, Java, Firebase',
+    date: '12/06/23 2.30pm - 4.30pm',
+    venue: 'i3 lab 1.605',
     type: 'Workshop',
     href: '/sample',
-  },  {
-    title: '3DC Website',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
+    image:'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+  },
+
+  {
+    title: 'How to Git gud',
+    description: 'Git, Github desktop',
+    date: '29/05/23 2.00pm - 4.30pm',
+    venue: 'i3 lab 1.605',
     type: 'Workshop',
+    href: '/sample',
+    image:'https://images.ctfassets.net/hrltx12pl8hq/3j5RylRv1ZdswxcBaMi0y7/b84fa97296bd2350db6ea194c0dce7db/Music_Icon.jpg',
+  },
+
+  {
+    title: 'Women in Code',
+    description: 'Networking for careers in Tech',
+    date: '08/03/23 4.00pm - 5.30pm',
+    venue: 'Thinktank 13 2.307',
+    type: 'Event',
     href: '/sample',
     image:'https://th.bing.com/th/id/OIG.CO2sHWK_IEYIwzXsC2hX',
   },
 
   {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
+    title: "Automation : There's Gotta Be a Better Way! ",
+    description: 'PowerQuery, Excel',
+    date: '15/02/23 3.00pm - 4.30pm',
     venue: 'Thinktank 13 2.307',
-    type: 'Project',
+    type: 'Workshop',
     href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
+    image:'https://th.bing.com/th/id/OIG.CO2sHWK_IEYIwzXsC2hX'
+  },  
 
   {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
+    title: 'Intro to HTML and CSS',
+    description: '',
+    date: '19/01/23 1.00pm - 3.00pm',
+    venue: 'i3 1.605',
     type: 'Project',
     href: '/sample',
     image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
   },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
 
   {
     title: '3DC Website a very very very very very long title',

@@ -44,8 +44,7 @@ export default function ProjectHeader() {
             Projects
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            3DC project showcase. Members team up to work on exciting projects
-            that they are passionate about.
+          We aim to create a space of projection development where applied knowledge is the core of skill development and to engage and challenge students to solve problems, especially in STEM-related topics. We host exciting and enriching events such as workshops and code along sessions throughout the year. We also support our members in various STEM projects that they wish to embark on.
           </p>
         </div>
         {/* <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
