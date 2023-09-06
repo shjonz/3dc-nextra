@@ -72,9 +72,8 @@ const TelegramButton = ({ profileUrl }) => {
     );
   };
 
-export const ExcoCards = ({name, role, description, github, linkedin, email, telegram, image, href}) => {
+export const ExcoCards = ({name, member_role, description, github_link, linkedin_link, email, telegram, image_link, href}) => {
     const [isFlipped, setIsFlipped] = useState(false);
-
     const handleCardClick = () => {
       setIsFlipped(!isFlipped);
     };
@@ -86,7 +85,7 @@ export const ExcoCards = ({name, role, description, github, linkedin, email, tel
               className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 transform transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="flex justify-center">
                   <div className="flex justify-center -mt-[75px]">
-                      <img src= {image}
+                      <img src= {image_link}
                       className="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]" alt="Avatar" />
                   </div>
               </div>
@@ -96,15 +95,15 @@ export const ExcoCards = ({name, role, description, github, linkedin, email, tel
                   <h5 className="mb-1 text-lg font-bold">{name}</h5>
                 </Reveal>
                 <Reveal>  
-                  <p className="mb-6 italic">{role}</p>
+                  <p className="mb-6 italic">{member_role}</p>
                 </Reveal> 
                 <Reveal>
                   <p className="mb-6">{description}</p>
                 </Reveal>   
                   <ul className="mx-auto flex list-inside justify-center">
                 
-                  <GitHubButton profileUrl={github}/>
-                  <LinkedinButton profileUrl={linkedin}/>
+                  <GitHubButton profileUrl={github_link}/>
+                  <LinkedinButton profileUrl={linkedin_link}/>
                   <EmailButton emailAddress={email}/>
                   <TelegramButton profileUrl={telegram}/>
 

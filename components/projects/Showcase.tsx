@@ -3,119 +3,9 @@ import {MdDateRange,MdLocationOn} from "react-icons/md";
 import { motion } from "framer-motion";
 
 
-const projects = [
-  {
-    title: '3DC Website',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image:'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Event',
-    href: '/sample',
-    image:'https://images.ctfassets.net/hrltx12pl8hq/3j5RylRv1ZdswxcBaMi0y7/b84fa97296bd2350db6ea194c0dce7db/Music_Icon.jpg',
-  },
-  {
-    title: '3DC Website',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image:'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Workshop',
-    href: '/sample',
-  },  {
-    title: '3DC Website',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Workshop',
-    href: '/sample',
-    image:'https://th.bing.com/th/id/OIG.CO2sHWK_IEYIwzXsC2hX',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-  {
-    title: '3DC Website a very very very very very long title',
-    description: 'This website was built using Next.js, Tailwind CSS, and TypeScript. It is hosted on Vercel. It is hosted on Vercel.It is hosted on Vercel.It is hosted on Vercel.',
-    date: '04/08/23 3pm',
-    venue: 'Thinktank 13 2.307',
-    type: 'Project',
-    href: '/sample',
-    image_link:'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  },
-
-];
 
 export function ShowcaseCard(props) {
-  const { title, description, image_link, href, date, venue, type} = props;
+  const { title, description, image_link, href, date, project_cat} = props;
   var shortdesc = ''
   if (description.length < 120){shortdesc = description}
   else {shortdesc = description.slice(0,90)+"..."}
@@ -129,7 +19,7 @@ export function ShowcaseCard(props) {
       <img className="rounded-t-lg object-cover h-40 w-60 aspect-video" src={props.image_link} alt=""/>
       
       
-      <p className="px-5 pt-3 text-xs text-gray-400 font-bold">{props.type}</p>
+      <p className="px-5 pt-3 text-xs text-gray-400 font-bold">{props.project_cat}</p>
 
       
       <h5 className= "px-5 pt-3 text-xl font-bold tracking-tight text-gray-900">
@@ -138,7 +28,6 @@ export function ShowcaseCard(props) {
       </h5>
       <div className="px-5 py-3">
         <div className="flex"><MdDateRange/> <p className="px-2 text-sm"> {props.date}</p></div>
-        <div className="flex"><MdLocationOn/><p className="px-2 text-sm">{props.venue}</p></div>
       </div>
       
       <p className="px-5 pb-5 text-gray-700">
@@ -153,28 +42,19 @@ export function ShowcaseCard(props) {
 
 
 export default function Showcase() {
-  const [ data, setData ] = useState([]);
-  useEffect( () =>{
-    const data = getData();
-    console.log('get data here ', JSON.stringify(data[0]));
-  }, [])
+  const [projects,setProject] = useState([])
+
+  useEffect(() => {
+    const getProjects= async () => {
+      const res = await fetch('https://3dc-nextra-phi.vercel.app/api/projects/get')
+      const json = await res.json();
+      setProject(json);
+    };
+
+    getProjects();
 
 
-  //RYAN this is how to call backend from front end
-  const getData = async () => {
-    //to test ur data, type this link http://localhost:3000/api/projects/get inside ur browser. you will either get
-    //empty array or some data.
-    
-    const res = await fetch(`http://localhost:3000/api/projects/get`, {
-      cache: "no-store",
-    }).then(
-      response => response.json()
-    ).then(data => {
-      console.log('data ', data);
-      setData(data);
-    });
-  
-  };
+  },[projects])
 
   //RYAN data.map() is how u make ur data displayed.
   return (

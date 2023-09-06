@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import {
@@ -33,42 +33,24 @@ const features = [
   },
 ];
 
-const exco = [
-  {
-    name: 'Asyraff',
-    role: 'Vice President',
-    description: 'i llike pie',
-    github: 'www.google.com',
-    linkedin: 'www.google.com',
-    email: 'john@gmail.com',
-    telegram:'www.google.com',
-    href: 'www.google.com'
-  },
-  {
-    name: 'Ryan',
-    role: 'Vice President',
-    description: 'i llike pie',
-    github: 'www.google.com',
-    linkedin: 'www.google.com',
-    email: 'john@gmail.com',
-    telegram:'www.google.com',
-    href: 'www.google.com'
-  },
-  {
-    name: 'john doe',
-    role: 'President',
-    description: 'i llike pie',
-    github: 'www.google.com',
-    linkedin: 'www.google.com',
-    email: 'john@gmail.com',
-    telegram:'www.google.com',
-    href: 'www.google.com'
-  },
-  // Add more event objects as needed
-  //sm md lg xl 2xl 
-];
+
+
 
 export default function About() {
+  const [exco,setExco] = useState([])
+
+  useEffect(() => {
+    const getMembers= async () => {
+      const res = await fetch('https://3dc-nextra-phi.vercel.app/api/members/get')
+      const json = await res.json();
+      setExco(json);
+    };
+
+    getMembers();
+
+
+  },[exco])
+  
   return (
     <div className=" snap-center flex-shrink-0  lg:py-20 sm:py-32" id="about">
       <div className="mx-auto lg:px-40 lg:py-40 md:px-10  ">
@@ -131,16 +113,9 @@ export default function About() {
                 allowfullscreen
               ></iframe> "ratio ratio-16x9 " */}
             <div className="exco-profilecard  lg:px-4 lg:pt-40 flex gap-4 overflow-auto">
-              {exco.map((event, index) => (
-                <ExcoCards key={index}
-                name={event.name}
-                role={event.role}
-                description={event.description}
-                github={event.github}
-                linkedin={event.linkedin}
-                email={event.email}
-                telegram={event.telegram}  />
-              ) )}
+            {exco.map((member, key) => (
+                    <ExcoCards key={key} {...member} />
+                  ))}
             </div>
           </div>
           </RightSide>

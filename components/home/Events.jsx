@@ -3,20 +3,6 @@ import EventCard from './EventCard';
 import { LeftSide, RightSide } from './OnScroll';
 import { ShowcaseCard } from '../projects/Showcase';
 
-const events = [
-  {
-    title: 'Music Festival',
-    date: 'July 10, 2023',
-    description: 'Join us for a day of live music and fun!',
-  },
-  {
-    title: 'Art Exhibition',
-    date: 'August 15, 2023',
-    description: 'Explore beautiful artworks from local artists.',
-  },
-  // Add more event objects as needed
-  //sizes sm md lg xl 2xl 
-];
 
 export default function Events() {
   const [ data, setData ] = useState([]);
@@ -35,7 +21,7 @@ export default function Events() {
     //const res = await fetch(`http://localhost:3000/api/projects/get`, {
     
     //for production
-    const res = await fetch(`https://3dc-nextra-phi.vercel.app/api/projects/get`, {
+    const res = await fetch(`https://3dc-nextra-phi.vercel.app/api/events/get`, {
       cache: "no-store",
     }).then(
       response => response.json()
@@ -105,7 +91,7 @@ export default function Events() {
               <ShowcaseCard
                 key={index}
                 title={event.title}
-                date={event.date}
+                date={event.start_date.slice(0,10)}
                 description={event.description}
                 image_link = {event.image_link}
               />
