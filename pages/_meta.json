@@ -19,5 +19,12 @@
     "theme": {
       "layout": "raw"
     }
+  },
+  "events": {
+    "title": "Events",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
   }
 }
